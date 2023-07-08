@@ -1,0 +1,73 @@
+/*search box css start here*/
+.search-sec {
+  padding: 2rem;
+  margin-left: 60px;
+}
+.search-slt {
+  display: block;
+  width: 100%;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  background-color: rgb(202, 212, 215);
+  background-image: none;
+  border: 1px solid rgb(40, 55, 77);
+  height: calc(3rem + 2px) !important;
+  border-radius:50px;
+}
+
+.search-btn {
+  display: block;
+  background-color: rgb(32, 46, 50);
+  border: 1px solid rgb(40, 55, 77);
+}
+.wrn-btn {
+  width: 100%;  
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  height: calc(3rem + 2px) !important;
+  border-radius: 20px;
+  background-color: red;
+}
+
+.background {
+  
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  min-height: 100vh;
+  position: relative;
+}
+
+.class-info img {
+  border-radius: 2px 2px 0 0;
+}
+
+/* .image-fluid {
+  max-width: 100%;
+  max-height: 200px;
+} */
+
+#container .item_wrapper {
+  width:200px;
+  height: 800px;
+  margin:0 5px;
+}
+
+#container .item {
+  width:100%;
+  background:#ccc;
+  margin:5px 0;
+}
+
+.s002 form legend {
+  font-size: 60px;
+  line-height: 1;
+  color: red;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 100px;
+}
+
