@@ -14,6 +14,6 @@ with open("UsedDataset/Movie.txt", "w") as file:
         Year = dataDict["Year"][i]
         Genres = dataDict["Genres"][i]
         Poster = dataDict["Poster"][i]
-        string = f"insert into dbo.Movie values('{MovieID}','{Title}','{url}','{Type}','{Rate}','{Time}','{Year}','{Genres}','{Poster}')"
+        string = f"insert into dbo.Movie values('{MovieID}','{Title}','{url}','{Type}',{Rate},{Time},{Year},'{Genres}','{Poster}')"
         file.write(string+"\n")
  
