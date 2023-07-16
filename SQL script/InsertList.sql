@@ -1,4 +1,4 @@
-insert into dbo.List values ('100 day with movies',GETDATE(),'Chi Thanh')
+insert into dbo.List values ('Phim hay',GETDATE(),'KMB')
 insert into dbo.List values ('Horror',GETDATE(),'Scary boi')
 insert into dbo.List values ('Romcom',GETDATE(),'member123')
 insert into dbo.List values ('Holywood',GETDATE(),'deadline898')
