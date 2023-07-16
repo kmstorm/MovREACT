@@ -100,8 +100,7 @@ function Home() {
 
               <p>
                 If you have any question regarding of the website or our source
-                code, please feel free to contact us through the link on your
-                right. Thank you.
+                code, please feel free to contact us. Thank you.
               </p>
             </div>
 
@@ -115,7 +114,7 @@ function Home() {
 
                 <div className="team-info d-flex flex-column">
                   <h3>Minh Bao</h3>
-                  <span>Front-end Dev</span>
+                  <span>Back-end Dev</span>
 
                   <ul className="social-icon mt-3">
                     <li>
@@ -252,6 +251,7 @@ function Home() {
                   <span>
                     <strong>Release Year:</strong> 2015
                   </span>
+                  <br />
                   <span>
                     <strong> Movie ID: </strong> tt2293640
                   </span>
@@ -299,6 +299,7 @@ function Home() {
                   <span>
                     <strong>Release Year:</strong> 2022
                   </span>
+                  <br />
                   <span>
                     <strong> Movie ID: </strong> tt5113044
                   </span>
@@ -344,6 +345,7 @@ function Home() {
                   <span>
                     <strong>Release Year:</strong> 2010
                   </span>
+                  <br />
                   <span>
                     <strong> Movie ID: </strong> tt1323594
                   </span>
@@ -389,6 +391,7 @@ function Home() {
                   <span>
                     <strong>Release Year:</strong> 2013
                   </span>
+                  <br />
                   <span>
                     <strong> Movie ID: </strong> tt1690953
                   </span>

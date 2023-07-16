@@ -22,10 +22,10 @@ namespace WebAppSql.Controllers
         public JsonResult Get()
         {
             string query = @"
-                            SELECT * FROM [Wikimdb].[dbo].[List]
+                            SELECT * FROM [MovREACT].[dbo].[List]
                             ";
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+            string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -49,7 +49,7 @@ namespace WebAppSql.Controllers
                             ";
 
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+            string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -79,7 +79,7 @@ namespace WebAppSql.Controllers
                             ";
 
                 DataTable table = new DataTable();
-                string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+                string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
                 SqlDataReader myReader;
                 using (SqlConnection myCon = new SqlConnection(sqlDataSource))
                 {
@@ -112,14 +112,14 @@ namespace WebAppSql.Controllers
         {
             
             string query = @"
-                        SELECT DISTINCT [Wikimdb].[dbo].[Movie].[MovieID], [Title], [FilmURL],[TitleType] [IMDBRating], [Runtime], [ReleasedYear], [GenreTotal],[PosterLink], [Wikimdb].[dbo].[Director].[Director]
-                        FROM [Wikimdb].[dbo].[Movie] inner join [Wikimdb].[dbo].[AddList]
-                        ON [Wikimdb].[dbo].[Movie].[MovieID] = [Wikimdb].[dbo].[AddList].[MovieID]
-                        inner join [Wikimdb].[dbo].[Director] on [Wikimdb].[dbo].[Director].[MovieID] = [Wikimdb].[dbo].[Movie].[MovieID]
-                        WHERE [Wikimdb].[dbo].[AddList].[ListID] = @ListID
+                        SELECT DISTINCT [MovREACT].[dbo].[Movie].[MovieID], [Title], [FilmURL],[TitleType] [IMDBRating], [Runtime], [ReleasedYear], [GenreTotal],[PosterLink], [MovREACT].[dbo].[Director].[Director]
+                        FROM [MovREACT].[dbo].[Movie] inner join [MovREACT].[dbo].[AddList]
+                        ON [MovREACT].[dbo].[Movie].[MovieID] = [MovREACT].[dbo].[AddList].[MovieID]
+                        inner join [MovREACT].[dbo].[Director] on [MovREACT].[dbo].[Director].[MovieID] = [MovREACT].[dbo].[Movie].[MovieID]
+                        WHERE [MovREACT].[dbo].[AddList].[ListID] = @ListID
                         ";
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+            string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -148,7 +148,7 @@ namespace WebAppSql.Controllers
                             ";
 
                 DataTable table = new DataTable();
-                string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+                string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
                 SqlDataReader myReader;
                 using (SqlConnection myCon = new SqlConnection(sqlDataSource))
                 {
@@ -182,7 +182,7 @@ namespace WebAppSql.Controllers
                             ";
 
                 DataTable table = new DataTable();
-                string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+                string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
                 SqlDataReader myReader;
                 using (SqlConnection myCon = new SqlConnection(sqlDataSource))
                 {

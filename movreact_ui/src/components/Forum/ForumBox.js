@@ -7,7 +7,7 @@ function ForumBox(props) {
 
   return (
     <>
-      <div class="comment mt-4 text-justify float-left">
+      <div class="comment mt-4 mx-2 text-justify float-left">
         <h4>{Username}</h4>
         <span> - {CommentDate}</span>
         <br />

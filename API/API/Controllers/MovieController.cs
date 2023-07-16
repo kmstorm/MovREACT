@@ -22,13 +22,13 @@ namespace WebAppSql.Controllers
         public JsonResult Get()
         {
             string query = @"
-                            SELECT [Wikimdb].[dbo].[Movie].[MovieID], [Title], [FilmURL], [IMDBRating], [Runtime], [ReleasedYear], [GenreTotal],[PosterLink], [Director]
-                            FROM [Wikimdb].[dbo].[Movie] inner join [Wikimdb].[dbo].[Director]
-                            ON [Wikimdb].[dbo].[Movie].[MovieID] = [Wikimdb].[dbo].[Director].[MovieID]
+                            SELECT [MovREACT].[dbo].[Movie].[MovieID], [Title], [FilmURL], [IMDBRating], [Runtime], [ReleasedYear], [GenreTotal],[PosterLink], [Director]
+                            FROM [MovREACT].[dbo].[Movie] inner join [MovREACT].[dbo].[Director]
+                            ON [MovREACT].[dbo].[Movie].[MovieID] = [MovREACT].[dbo].[Director].[MovieID]
                             ORDER BY NEWID()
                             ";
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+            string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -49,16 +49,16 @@ namespace WebAppSql.Controllers
             try
             {
                 string query = @"
-                           insert into [Wikimdb].[dbo].[Movie]
+                           insert into [MovREACT].[dbo].[Movie]
                             (MovieID,Title,FilmURL,TitleType,IMDBRating,Runtime,ReleasedYear,GenreTotal,PosterLink)
                             values(@MovieID,@Title,@FilmURL,@TitleType,@IMDBRating,@Runtime,@ReleasedYear,@GenreTotal,@PosterLink);
-                            insert into [Wikimdb].[dbo].[Director] 
+                            insert into [MovREACT].[dbo].[Director] 
                             (Director,MovieID)
                             values (@Director,@MovieID);
                             ";
 
                 DataTable table = new DataTable();
-                string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+                string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
                 SqlDataReader myReader;
                 using (SqlConnection myCon = new SqlConnection(sqlDataSource))
                 {
@@ -85,11 +85,11 @@ namespace WebAppSql.Controllers
                 foreach (string i in GenreSplit)
                 {
                     string query2 = @"
-                           insert into [Wikimdb].[dbo].[Genres] values
+                           insert into [MovREACT].[dbo].[Genres] values
                             (@Genre,@MovieID)
                             ";
                     DataTable table2 = new DataTable();
-                    string sqlDataSource2 = _configuration.GetConnectionString("WikimdbCon");
+                    string sqlDataSource2 = _configuration.GetConnectionString("MovREACTCon");
                     SqlDataReader myReader2;
                     using (SqlConnection myCon2 = new SqlConnection(sqlDataSource2))
                     {
@@ -123,17 +123,17 @@ namespace WebAppSql.Controllers
             try
             {
                 string query = @"
-                        update [Wikimdb].[dbo].[Movie] set
+                        update [MovREACT].[dbo].[Movie] set
                         Title = @Title,FilmURL = @FilmURL,TitleType = @TitleType,IMDBRating = @IMDBRating,Runtime=@Runtime,
                         ReleasedYear = @ReleasedYear,GenreTotal = @GenreTotal,PosterLink = @PosterLink
                         where MovieID = @MovieID;
-                        update [Wikimdb].[dbo].[Director] set 
+                        update [MovREACT].[dbo].[Director] set 
                         Director = @Director
                         where MovieID = @MovieID;
                         ";
 
                 DataTable table = new DataTable();
-                string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+                string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
                 SqlDataReader myReader;
                 using (SqlConnection myCon = new SqlConnection(sqlDataSource))
                 {
@@ -161,11 +161,11 @@ namespace WebAppSql.Controllers
                 foreach (string i in GenreSplit)
                 {
                     string query2 = @"
-                        insert into [Wikimdb].[dbo].[Genres] values
+                        insert into [MovREACT].[dbo].[Genres] values
                         (@Genre, @MovieID)
                         ";
                     DataTable table2 = new DataTable();
-                    string sqlDataSource2 = _configuration.GetConnectionString("WikimdbCon");
+                    string sqlDataSource2 = _configuration.GetConnectionString("MovREACTCon");
                     SqlDataReader myReader2;
                     using (SqlConnection myCon2 = new SqlConnection(sqlDataSource2))
                     {
@@ -200,7 +200,7 @@ namespace WebAppSql.Controllers
                             ";
 
                 DataTable table = new DataTable();
-                string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+                string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
                 SqlDataReader myReader;
                 using (SqlConnection myCon = new SqlConnection(sqlDataSource))
                 {

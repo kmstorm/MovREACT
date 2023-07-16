@@ -7,7 +7,7 @@ CREATE TABLE [dbo].[Movie](
 	[Runtime] [smallint] NULL,
 	[ReleasedYear] [smallint] NOT NULL,
 	[GenreTotal] [nvarchar](100) NOT NULL,
-	[PosterLink] [nvarchar](100) NULL,
+	[PosterLink] [nvarchar](200) NULL,
 	CONSTRAINT pkMovie PRIMARY KEY (MovieID)
 )
 

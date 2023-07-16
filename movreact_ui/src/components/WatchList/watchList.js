@@ -344,7 +344,7 @@ export default class WatchList extends Component {
                     </button>
                   </div>
                 </div>
-                DateAdding
+                DateAdded
               </th>
               <th>Options</th>
             </tr>

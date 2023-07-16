@@ -22,13 +22,13 @@ namespace WebAppSql.Controllers
         public JsonResult Get()
         {
             string query = @"
-                            SELECT [Wikimdb].[dbo].[Movie].[MovieID], [Wikimdb].[dbo].[Movie].[Title],
-                            [Wikimdb].[dbo].[Comment].[Username], [Wikimdb].[dbo].[Comment].[Comment], convert(varchar(10),[Wikimdb].[dbo].[Comment].[CommentDate],120)
-                            from [Wikimdb].[dbo].[Comment] inner join [Wikimdb].[dbo].[Movie]
-                            on [Wikimdb].[dbo].[Movie].[MovieID] = [Wikimdb].[dbo].[Comment].[MovieID]
+                            SELECT [MovREACT].[dbo].[Movie].[MovieID], [MovREACT].[dbo].[Movie].[Title],
+                            [MovREACT].[dbo].[Comment].[Username], [MovREACT].[dbo].[Comment].[Comment], convert(varchar(10),[MovREACT].[dbo].[Comment].[CommentDate],120)
+                            from [MovREACT].[dbo].[Comment] inner join [MovREACT].[dbo].[Movie]
+                            on [MovREACT].[dbo].[Movie].[MovieID] = [MovREACT].[dbo].[Comment].[MovieID]
                             ";
             DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+            string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
             {
@@ -49,12 +49,12 @@ namespace WebAppSql.Controllers
             try
             {
                 string query = @"
-                           insert into [Wikimdb].[dbo].[Comment] values
+                           insert into [MovREACT].[dbo].[Comment] values
                             (@Username,@Comment,@MovieID,GETDATE())
                             ";
 
                 DataTable table = new DataTable();
-                string sqlDataSource = _configuration.GetConnectionString("WikimdbCon");
+                string sqlDataSource = _configuration.GetConnectionString("MovREACTCon");
                 SqlDataReader myReader;
                 using (SqlConnection myCon = new SqlConnection(sqlDataSource))
                 {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TgflhcdhqgJVh57HVjkemRvZZi+hZOje6nQ9QjaRMI9bzREdVey72dx0lf3sChFZYYgqgCFjV+gIs0c1BKT63w==",
+  "dgSpecHash": "Xk+DRd7+LSFGK5fNwFSpbh+6vdIhfHYzmawnMb7dDBzRcyv+HRaYbaTAz5NN3S94HOYD8V37jWuNnnuofzIFIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NGUYENGIATUNGDUONG\\Documents\\Hust\\Năm 2\\CSDL\\TH\\Project\\ReactJS-ASP.Net-Core-web-api-Microsoft-SQL-server\\API\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\NGUYENGIATUNGDUONG\\Documents\\Hust\\Năm 2\\CSDL\\TH\\Project\\MovREACT\\API\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NGUYENGIATUNGDUONG\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.17\\microsoft.aspnetcore.jsonpatch.5.0.17.nupkg.sha512",
     "C:\\Users\\NGUYENGIATUNGDUONG\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.17\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.17.nupkg.sha512",
