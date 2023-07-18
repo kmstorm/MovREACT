@@ -18,11 +18,11 @@ function Home() {
             <div className="col-lg-8 col-md-10 mx-auto col-12">
               <div className="hero-text mb-3 mt-6 text-center">
                 <h6 className="text-black">
-                  Start your dream through exicting films!
+                Your passport to discover the cinematic world
                 </h6>
 
                 <h1 className="text-black">
-                  Discover your imagination with MovREACT
+                  Unleash your imagination with MovREACT
                 </h1>
 
                 <a
@@ -47,41 +47,15 @@ function Home() {
       <section className="feature">
         <div className="container">
           <div className="row">
-            <div className="d-flex flex-column justify-content-center ml-lg-auto mr-lg-5 col-lg-5 col-md-6 col-12">
+            <div className="d-flex flex-column justify-content-center ml-lg-2 mr-lg-auto col-lg-5 col-md-6 col-12">
               <h2 className="mb-3 text-black">New to MovREACT?</h2>
 
-              <h6 className="mb-4 text-black">
-                Your membership is up to 2 months FREE ($62.50 per month)
-              </h6>
+              <h5 className="mb-4 text-black">
+                MovREACT is where your movies come to life!
+              </h5>
 
-              <p>Do not hesitate because the promotion will not last long.</p>
+              <p>Join us to the captivating world of films.</p>
 
-              <a
-                href="user"
-                className="btn custom-btn btn-danger bordered bg-color mt-3"
-              >
-                Sign up now
-              </a>
-            </div>
-
-            <div className="mr-lg-auto mt-3 col-lg-4 col-md-6 col-12">
-              <div className="about-working-hours">
-                <div>
-                  <h2 className="mb-4 text-black">Hotline </h2>
-
-                  <strong className="d-block text-dark">Sunday : Closed</strong>
-
-                  <strong className="mt-3 d-block text-dark">
-                    Monday - Friday
-                  </strong>
-
-                  <p>7:00 AM - 10:00 PM</p>
-
-                  <strong className="mt-3 d-block text-dark">Saturday</strong>
-
-                  <p>6:00 AM - 4:00 PM</p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -107,9 +81,9 @@ function Home() {
             <div className="mr-lg-auto mt-5 col-lg-3 col-md-6 col-12">
               <div className="team-thumb">
               <img
-                  src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/322161418_1524796088027873_5798399063040496831_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_ohc=NUd7t2M3DioAX95XQz5&_nc_ht=scontent.fhan2-4.fna&oh=00_AfAqO6cxmAUI2tGYNgUYIs-bGDzvXcXhkpgn5vk3mQG1Aw&oe=64AD5125"
+                  src="https://scontent.xx.fbcdn.net/v/t39.30808-6/322161418_1524796088027873_5798399063040496831_n.jpg?_nc_cat=105&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_ohc=Rs05REdmwAYAX9f5n85&_nc_ht=scontent.fhan3-1.fna&oh=00_AfCTv4JOQgy02m_g8qrwxrb75Wtuse3ROHSDwjUL5T_8og&oe=64B92EA5&_nc_fr=fhan3c01"
                   className="img-fluid"
-                  alt="Trainer"
+                  alt="ProfileImg"
                 />
 
                 <div className="team-info d-flex flex-column">
@@ -131,9 +105,9 @@ function Home() {
             <div className="mr-lg-auto mt-5 col-lg-3 col-md-6 col-12">
               <div className="team-thumb">
               <img
-                  src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/182086838_865016151088417_4651466497571276428_n.jpg?_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hWH1g2pub5YAX9PLydq&_nc_ht=scontent.fhan2-3.fna&oh=00_AfDkr3UjxIjDAJMDuHTFwilX4ayTBw6RUDJN0elAZ5rzIQ&oe=64AD57B1"
+                  src="https://scontent.fhan3-1.fna.fbcdn.net/v/t39.30808-1/182086838_865016151088417_4651466497571276428_n.jpg?stp=dst-jpg_s320x320&_nc_cat=102&cb=99be929b-59f725be&ccb=1-7&_nc_sid=7206a8&_nc_ohc=ZyIXARAneewAX-gDRDy&_nc_ht=scontent.fhan3-1.fna&oh=00_AfAL532o9Q2WWIkX2NnYEPP7O1Y9eMjAnZtXc-qZhO1a4g&oe=64BA4B77"
                   className="img-fluid"
-                  alt="Trainer"
+                  alt="ProfileImg"
                 />
 
                 <div className="team-info d-flex flex-column">
@@ -157,7 +131,7 @@ function Home() {
               <img
                   src="https://scontent.fhan2-3.fna.fbcdn.net/v/t31.18172-1/11782156_480450482110728_7585510817783515539_o.jpg?stp=dst-jpg_p320x320&_nc_cat=111&cb=99be929b-59f725be&ccb=1-7&_nc_sid=7206a8&_nc_ohc=Te31NaHMQKAAX-nFGw2&_nc_oc=AQkSLcKN_v8H8pNL-qEnQEqDtCIGLql5Lobvre68KTEnKpREUuzvQz7K1Mv_V8gh1eY&_nc_ht=scontent.fhan2-3.fna&oh=00_AfChBa2Xc5NlD1FCUNfrRrk8TtdVDWZzcgbc9Oe9Z0JEBg&oe=64D0A467"
                   className="img-fluid"
-                  alt="Trainer"
+                  alt="ProfileImg"
                 />
 
                 <div className="team-info d-flex flex-column">
@@ -179,9 +153,9 @@ function Home() {
             <div className="mr-lg-auto mt-5 col-lg-3 col-md-6 col-12">
               <div className="team-thumb">
               <img
-                  src="https://scontent.fhan2-5.fna.fbcdn.net/v/t39.30808-1/349928875_1099106501045671_1637119059613411744_n.jpg?stp=c207.452.529.529a_dst-jpg_s320x320&_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=7206a8&_nc_ohc=fOyvj8cWnhsAX9Du2lv&_nc_ht=scontent.fhan2-5.fna&oh=00_AfB5zpmR0xn0-8tqkQkFTM6llutTmEe_DZ72ZhOeC5mQEg&oe=64AF04C5"
+                  src="https://scontent.xx.fbcdn.net/v/t39.30808-1/349928875_1099106501045671_1637119059613411744_n.jpg?stp=c207.452.529.529a_dst-jpg_s320x320&_nc_cat=104&cb=99be929b-59f725be&ccb=1-7&_nc_sid=7206a8&_nc_ohc=pOvHXvCH3OMAX8LQNx8&_nc_ht=scontent.fhan3-1.fna&oh=00_AfB1BVBkOz3eaVDAO5VhnzM-uipEN59Z_idjeAHTq4KpfA&oe=64B8E805&_nc_fr=fhan3c01"
                   className="img-fluid"
-                  alt="Trainer"
+                  alt="ProfileImg"
                 />
 
                 <div className="team-info d-flex flex-column">
@@ -209,7 +183,7 @@ function Home() {
             <div class="col-lg-12 col-12 text-center mb-5">
               <h6>We recommend</h6>
 
-              <h2>Our mostly viewed films</h2>
+              <h2>Our most favourite films</h2>
             </div>
 
             <div class="mt-5 mt-lg-0 mt-md-0 col-lg-3 col-md-6 col-12 mb-4">

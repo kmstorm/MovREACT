@@ -175,17 +175,7 @@ class Forum extends Component {
                     />
                   </div>
                   <div class="form-group"></div>
-                  <div class="form-inline">
-                    <input
-                      type="checkbox"
-                      name="check"
-                      id="checkbx"
-                      class="mr-1"
-                    />
-                    <label for="subscribe">
-                      Subscribe me to the newlettter
-                    </label>
-                  </div>
+                  
                   <div class="form-group">
                     <button
                       type="button"

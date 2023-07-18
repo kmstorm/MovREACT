@@ -10,9 +10,9 @@ function Footers() {
           <div className="ml-auto mb-4 col-12">
             <br />
             <br />
-            <p style={{ fontSize: 18 }}>PROJECT PHILOSOPHY</p>
+            <p style={{ fontSize: 18 }}>Your Gateway to Cinematic Adventures</p>
             <p style={{ fontSize: 22 }}>
-              "Without films, a soul is not a soul."
+              Experience the Thrills, Laughter, and Tears of Cinema with Us!
             </p>
           </div>
 
@@ -29,7 +29,7 @@ function Footers() {
               <i className="fa fa-envelope-o mr-1"></i>
               <a href="#"> Duc.PT215038@sis.hust.edu.vn</a>
               <p>
-                <i className="fa fa-phone mr-1"></i> 086-920-7890
+                <i className="fa fa-phone mr-1"></i> 035-582-8343
               </p>
             </p>
 
@@ -45,7 +45,7 @@ function Footers() {
               <i className="fa fa-envelope-o mr-1"></i>
               <a href="#">Gioi.DV215041@sis.hust.edu.vn</a>
               <p>
-                <i className="fa fa-phone mr-1"></i> 010-020-0000
+                <i className="fa fa-phone mr-1"></i> 037-434-8370
               </p>
             </p>
           </div>
