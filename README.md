@@ -1,6 +1,14 @@
 # MovREACT
-This is Movie Database project using ASP.NET Bootstrap template
+Movie Database using ASP.NET Bootstrap template for FE, C# for BE and Microsoft SQL Server
 
-To watch demo:
-- Run API IIS Express on Visual Studio
-- using command 'npm start' to build
+### Requirement:
+- Visual Studio
+- Nodejs
+- Reactjs
+- .NET 5.0 or higher
+
+### To watch demo:
+- Run API.sln IIS Express on Visual Studio
+- open terminal and 'cd MovREACT'
+- npm install
+- npm start
